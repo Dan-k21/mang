@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    -Mảng hai chiều (còn gọi là ma trận) thực chất là mảng một chiều trong đó mỗi phần tử của
+    mảng là một mảng một chiều, và được truy xuất bởi hai chỉ số dòng và cột.
+
+    -Cách duyệt mảng 2 chiều:
+    Kết hợp index với vòng lặp for, thuộc tính length để chỉ định số vòng lặp trong từng hàng
+    và từng cột của mảng 2 chiều, chúng ta có thể truy cập lần lượt tới các phần tử trong mảng
+    2 chiều và qua đó thực hiện việc duyệt mảng 2 chiều trong JavaScript
+    VD: Duyệt mảng 2 chiều với vòng lặp for
+     let userData = [
+    ['Yamada', 28, 'Tokyo'],
+    ['Kiyoshi', 35, 'Hanoi'],
+    ['Honda', 24, 'Osaka']
+  ];
+
+  for ( let i = 0; i < userData.length; i++){
+      for (let j = 0; j < userData[i].length; j++){
+          console.log("["+i+"]"+"["+j+"] =",userData[i][j]);
+      }
+  }
+  Sử dụng Array reduce để tìm số lớn nhất và nhỏ nhất:
+  VD: let num = [5, 4, 7, 2, 8, 7, 3];
+      let max_val = num.reduce(function(accumulator, element){
+        return (accumulator > element) ? accumulator : element
+    });
+    console.log(num);
+    console.log("max= ",max_val);
+     */
+</script>
+</body>
+</html>
